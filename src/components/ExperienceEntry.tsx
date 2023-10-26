@@ -4,19 +4,19 @@ import { FilterContext } from "../pages/Home";
 import { Entry } from "../@types/CustomTypes";
 
 interface ExperienceEntryProps {
+  key: number,
   entry: Entry;
 }
 
-export function ExperienceEntry({ entry }: ExperienceEntryProps) {
-  const ribbonStyle = entry.ThirdParty?.RibbonBgColor
-    ? entry.ThirdParty?.RibbonBgColor + " " + entry.ThirdParty?.RibbonFontColor
-    : "bg-green-400";
-  const consultingText = entry.ThirdParty?.RibbonDescription
-    ? entry.ThirdParty?.RibbonDescription + " "
-    : "consulting for ";
-  const [showExperience, setShowExperience] = useState(true);
+export function ExperienceEntry({ entry, ...props }: ExperienceEntryProps) {
 
+  const consultingText = entry?.ThirdParty?.RibbonDescription ?? "consulting for ";
+  const bgColor = entry?.ThirdParty?.RibbonBgColor ?? 'bg-green-400';
+  const fontColor = entry?.ThirdParty?.RibbonFontColor ?? 'text-black';
+
+  const [showExperience, setShowExperience] = useState(true);
   const filterContext = useContext(FilterContext);
+  
   useEffect(() => {
     if (filterContext.filteredTags.length === 0) {
       setShowExperience(true);
@@ -29,13 +29,13 @@ export function ExperienceEntry({ entry }: ExperienceEntryProps) {
     }
   }, [filterContext.filteredTags]);
 
-  return (
+  return entry && (
     <li
       className={`${
-        !showExperience && "hidden"
-      } md:flex items-center space-x-3 mb-10 bg-white shadow-sm px-4 py-8 rounded`}
+        !showExperience ? "hidden" : 'block md:flex'
+      } items-center space-x-3 mb-10 bg-white shadow-sm px-4 py-8 rounded`}
     >
-      <div className="text-center w-fit mx-auto">
+      <div key={props.key} className="text-center w-fit mx-auto">
         <a
           href={entry.Company.Link}
           target="_blank"
@@ -54,15 +54,15 @@ export function ExperienceEntry({ entry }: ExperienceEntryProps) {
           }
         </a>
         {entry.ThirdParty && (
-          <sup className={`px-1 text-xs block font-semibold ${ribbonStyle}`}>
-            {consultingText}
+          <div className={`px-1 text-xs block font-semibold ${fontColor} ${bgColor}`}>
+            {consultingText + " "}
             {
                 entry.ThirdParty.Name &&
                 <a href={entry.ThirdParty.Link} target="_blank">
                     {entry.ThirdParty.Name}
                 </a>
             }
-          </sup>
+          </div>
         )}
       </div>
       <div className="space-y-2">
@@ -72,7 +72,7 @@ export function ExperienceEntry({ entry }: ExperienceEntryProps) {
             {entry.Job.Duration}
           </span>
         </div>
-        <div className="mb-5 ">
+        <div className="mb-5">
           {entry.Job.TechStack.map((x) => x.Stack)
             .flat()
             .map((element, key) => (
@@ -85,7 +85,7 @@ export function ExperienceEntry({ entry }: ExperienceEntryProps) {
             ))}
         </div>
         <div>
-          <p>{entry.Job.Description}</p>
+          <p className="whitespace-pre-line align-bottom">{entry.Job.Description}</p>
         </div>
       </div>
     </li>

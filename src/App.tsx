@@ -3,7 +3,7 @@ import './i18n/config';
 import { Header } from './pages/Header';
 import { Home } from './pages/Home';
 import { Footer } from './pages/Footer';
-import { createContext, useEffect, useMemo, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import './@types/CustomTypes'
 import { DefaultPortfolio, Portfolio } from './@types/CustomTypes';
@@ -13,16 +13,13 @@ export const PortfolioContext = createContext<Portfolio>(DefaultPortfolio);
 function App() {
 
   const [content, setContent] = useState<Portfolio>(DefaultPortfolio);
-  const [t, i18n] = useTranslation();
+  const i18n = useTranslation()[1];
   
-  useMemo(() => {
-    console.log("using language: ", i18n.language);
-    fetch("./portfolio-" + i18n.language + ".json")
+  useEffect(() => {
+    fetch("./data/portfolio-" + i18n.language + ".json")
     .then(res => res.json())
     .then(result => setContent(result));
   }, [i18n.language])
-
-  useEffect(() => console.log("content changed: ", content), [content]);
 
   return (
     <>

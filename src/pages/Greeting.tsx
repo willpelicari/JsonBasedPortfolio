@@ -16,7 +16,7 @@ export function Greeting({greetingMessage, mainPhotoPath}: GreetingProps)
                         <h1 className="font-bold text-gray-800 text-4xl md:text-5xl xl:text-6xl mb-10">{greetingMessage}</h1>
                     </div>
                     <div className="mx-auto lg:mx-0">
-                        <img className="rounded-lg" src={mainPhotoPath} style={{width: 473}} />
+                        <img alt="mainPhoto" className="rounded-lg" src={mainPhotoPath} style={{width: 473}} />
                     </div>
                 </header> 
             </div>

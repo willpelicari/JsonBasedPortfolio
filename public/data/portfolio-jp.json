@@ -1,68 +1,68 @@
 {
     "Header": {
-        "Logo": "John Doe's Portfolio",
+        "Logo": "名字 名前",
         "Menu": [
             {
-                "Text": "Home",
+                "Text": "ホーム",
                 "Link": "#"
             },
             {
-                "Text": "About Me",
+                "Text": "自己紹介",
                 "Link": "#values"
             },
             {
-                "Text": "Services",
+                "Text": "サービス",
                 "Link": "#toolbox"
             },
             {
-                "Text": "Portfolio",
+                "Text": "ポートフォリオ",
                 "Link": "#experiences"
             }
         ],
         "ButtonCv": {
-            "Text": "Download CV",
-            "Link": "./cv/john-doe-cv.pdf"
+            "Text": "履歴書のダウンロード",
+            "Link": "https://s2.q4cdn.com/175719177/files/doc_presentations/Placeholder-PDF.pdf"
         }
     },
     "Greeting": {
         "Picture": "https://thispersondoesnotexist.com/",
-        "Message": "Passionate Developer, Innovative Solutions"
+        "Message": "情熱的な開発者、革新的なソリューション"
     },
     "About": {
-        "Title": "About Me",
-        "Description": "I'm a dedicated Full Stack Developer with over 5 years of experience in creating innovative web solutions. My mission is to deliver high-quality and user-friendly applications tailored to your needs."
+        "Title": "自己紹介",
+        "Description": "私は5年以上の経験を持つ献身的なフルスタック開発者です。私の使命は、お客様のニーズに合った高品質でユーザーフレンドリーなアプリケーションを提供することです。"
     },
     "Values": {
-        "Title": "My Values",
-        "Description": "My core values define my approach to web development and client relationships:",
+        "Title": "私の価値観",
+        "Description": "私の基本的な価値観は、ウェブ開発とクライアントとの関係へのアプローチを定義しています。",
         "ValuesList": [
-            "Quality Excellence",
-            "Innovation",
-            "Customer Satisfaction",
-            "Continuous Learning",
-            "Collaboration"
+            "品質の卓越性",
+            "革新",
+            "顧客満足",
+            "継続的な学び",
+            "協力"
         ],
         "Cards": [
             {
                 "Icon": "https://picsum.photos/150/150.jpg?random=1",
-                "Title": "HTML5 Expert",
-                "Description": "I specialize in creating HTML5 websites with the latest standards and technologies."
+                "Title": "HTML5 エキスパート",
+                "Description": "私は最新の標準と技術を使用してHTML5ウェブサイトを作成するのが専門です。"
             },
             {
                 "Icon": "https://picsum.photos/150/150.jpg?random=2",
-                "Title": "CSS3 Stylist",
-                "Description": "My expertise in CSS3 ensures visually appealing and responsive web designs."
+                "Title": "CSS3 スタイリスト",
+                "Description": "CSS3の専門知識により、視覚的に魅力的でレスポンシブなウェブデザインを実現します。"
             },
             {
                 "Icon": "https://picsum.photos/150/150.jpg?random=3",
-                "Title": "JavaScript Enthusiast",
-                "Description": "I love using JavaScript to bring interactivity and functionality to web applications."
+                "Title": "JavaScript エンスージアスト",
+                "Description": "私はJavaScriptを使用してウェブアプリケーションに対話性と機能性をもたらすことが大好きです。"
             }
         ]
     },
     "Toolbox": {
-        "Title": "My Toolbox",
-        "Description": "Explore my expertise in various technologies and frameworks:",
+        "Title": "私のツールボックス",
+        "Description": "さまざまな技術とフレームワークでの私の専門知識を探索してください。",
         "ToolsList": [
             "React",
             "Node.js",
@@ -75,20 +75,20 @@
         ]
     },
     "Experiences": {
-        "Title": "My Portfolio",
+        "Title": "私のポートフォリオ",
         "Entries": [
             {
                 "Company": {
                     "Logo": "https://picsum.photos/150/150.jpg?random=4",
-                    "Name": "Company A",
+                    "Name": "会社A",
                     "Link": "http://www.companya.com/"
                 },
                 "Job": {
-                    "Title": "Web Developer",
-                    "Duration": "Since January 2022",
+                    "Title": "Web開発者",
+                    "Duration": "2022年1月から",
                     "TechStack": [
                         {
-                            "Category": "Technologies",
+                            "Category": "テクノロジー",
                             "Stack": [
                                 "HTML5",
                                 "CSS3",
@@ -96,7 +96,7 @@
                             ]
                         },
                         {
-                            "Category": "Framework & Libraries",
+                            "Category": "フレームワークとライブラリ",
                             "Stack": [
                                 "React",
                                 "Node.js",
@@ -104,14 +104,14 @@
                             ]
                         },
                         {
-                            "Category": "Methodologies",
+                            "Category": "メソドロジー",
                             "Stack": [
-                                "Agile",
-                                "Scrum"
+                                "アジャイル",
+                                "スクラム"
                             ]
                         },
                         {
-                            "Category": "Tools",
+                            "Category": "ツール",
                             "Stack": [
                                 "Git",
                                 "JIRA",
@@ -119,21 +119,21 @@
                             ]
                         }
                     ],
-                    "Description": "I contributed to the development of web applications, ensuring high-quality code and responsiveness. Collaborated with cross-functional teams to meet project goals."
+                    "Description": "私はウェブアプリケーションの開発に貢献し、高品質なコードとレスポンシブ対応を確保しました。プロジェクト目標を達成するためにクロスファンクショナルチームと協力しました。"
                 }
             },
             {
                 "Company": {
                     "Logo": "https://picsum.photos/150/150.jpg?random=5",
-                    "Name": "Company B",
+                    "Name": "会社B",
                     "Link": "http://www.companyb.com/"
                 },
                 "Job": {
-                    "Title": "Front-end Developer",
-                    "Duration": "March 2021 to December 2021",
+                    "Title": "フロントエンド開発者",
+                    "Duration": "2021年3月から2021年12月まで",
                     "TechStack": [
                         {
-                            "Category": "Technologies",
+                            "Category": "テクノロジー",
                             "Stack": [
                                 "HTML5",
                                 "CSS3",
@@ -141,7 +141,7 @@
                             ]
                         },
                         {
-                            "Category": "Framework & Libraries",
+                            "Category": "フレームワークとライブラリ",
                             "Stack": [
                                 "Vue.js",
                                 "SASS",
@@ -149,13 +149,13 @@
                             ]
                         },
                         {
-                            "Category": "Methodologies",
+                            "Category": "メソドロジー",
                             "Stack": [
-                                "Scrum"
+                                "スクラム"
                             ]
                         },
                         {
-                            "Category": "Tools",
+                            "Category": "ツール",
                             "Stack": [
                                 "Git",
                                 "Bitbucket",
@@ -163,13 +163,13 @@
                             ]
                         }
                     ],
-                    "Description": "I created and maintained responsive front-end designs for web applications. Collaborated with the design team to implement visually appealing user interfaces."
+                    "Description": "私はウェブアプリケーションのためのレスポンシブなフロントエンドデザインを作成および維持しました。デザインチームと協力して視覚的に魅力的なユーザーインターフェースを実装しました。"
                 }
             }
         ]
     },
     "Footer": {
-        "Message": "Project developed by Wilton Peliçari",
+        "Message": "プロジェクトはウィルトン・ペリカリによって開発されました",
         "Link": "#",
         "SocialMedia": [
             {

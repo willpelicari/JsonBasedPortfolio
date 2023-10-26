@@ -1,23 +1,18 @@
 import i18next from 'i18next';
 import { initReactI18next } from 'react-i18next';
-import translationEn from './en/translation.json'
-import translationFr from './fr/translation.json'
-import translationPt from './pt/translation.json'
 
+
+// Resources must follow template's format
 export const RESOURCES = {
     en: {
-        translation: translationEn,
-    },
-    fr: {
-        translation: translationFr,
-    },
-    pt: {
-        translation: translationPt,
+        translation: "portfolio-en.json",
     }
 };
 
-i18next.use(initReactI18next).init({
-    lng: 'en',
-    debug: false,
-    resources: RESOURCES
-});
+i18next
+    .use(initReactI18next).init({
+        lng: 'en',
+        debug: false,
+        resources: RESOURCES,
+        fallbackLng: 'en'
+    });

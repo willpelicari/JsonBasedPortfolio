@@ -23,8 +23,8 @@ export function Career({ experiences } :CareerProps)
                     {/* <p>Showing {} out of {experiences.Entries.length}</p> */}
                 </div>
                 <ul className="space-y-12">
-                    {experiences.Entries && experiences.Entries.map(entry => (
-                        <ExperienceEntry entry={entry}/>
+                    {experiences.Entries && experiences.Entries.map((entry, key) => (
+                        <ExperienceEntry key={key} entry={entry}/>
                     ))}
                 </ul>
             </div>

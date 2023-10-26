@@ -1,6 +1,4 @@
 import { useContext } from 'react';
-import GitHub from '../assets/icons/github-mark.svg'
-import LinkedIn from '../assets/icons/linkedin.svg'
 import { PortfolioContext } from '../App';
 export function Footer()
 {
@@ -14,8 +12,8 @@ export function Footer()
                 </div>
                 <div className="flex items-center">
                     {content.Footer.SocialMedia.map((social, key) => (
-                        <a key={key} target="_blank" href={social.Link} className="p-0.5">
-                            <img src={social.Icon} className="w-10 h-10"/>
+                        <a key={key} target="_blank" rel="noreferrer" href={social.Link} className="p-0.5">
+                            <img src={social.Icon} alt="social icon" className="w-10 h-10"/>
                         </a>
                     ))}
                 </div>

@@ -13,8 +13,8 @@ export function Toolbox({title, description, experiences}:ToolboxProps)
     const categories = BuildCategories(experiences.Entries);
     return (
         <Section id="toolbox" title={title} description={description}>
-            {categories && Object.keys(categories).map(category => (
-                <TagCategory title={category} listOfTags={categories[category]}/>
+            {categories && Object.keys(categories).map((category, key) => (
+                <TagCategory key={key} title={category} listOfTags={categories[category]}/>
             ))}
         </Section>
     );
@@ -26,18 +26,19 @@ function BuildCategories(entries: Entry[]) {
     }
 
     const dict: any = {};
-    entries.filter(entry => entry.Job && entry.Job.TechStack).map(entry => {
-        entry.Job.TechStack.map(stack => {
+
+    entries.filter(entry => entry.Job && entry.Job.TechStack).forEach(entry => {
+        entry.Job.TechStack.forEach(stack => {
             if(!dict[stack.Category]) {
                 dict[stack.Category] = [...stack.Stack]
             } else {
-                stack.Stack.map(tech => {
+                stack.Stack.forEach(tech => {
                     if(dict[stack.Category].indexOf(tech) === -1) {
                         dict[stack.Category].push(tech);
                     }
                 })
             }
-        })
+        }) 
     });
 
     return dict;

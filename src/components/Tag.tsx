@@ -8,15 +8,14 @@ interface TagProps {
     value: string
 }
 
-export function Tag({key, bgColor, hoverColor, value}: TagProps)
+export function Tag({bgColor, hoverColor, value, ...props}: TagProps)
 {
     const filterContext = useContext(FilterContext);
-
     const [isSelected, setTagAsSelected] = useState(false);
 
     useEffect(() => {
         setTagAsSelected(filterContext.filteredTags.includes(value));
-    }, [filterContext.filteredTags]);
+    }, [filterContext.filteredTags, value]);
     
     function switchTag(value: string): void {
         let filteredTags = [...filterContext.filteredTags];
@@ -29,13 +28,12 @@ export function Tag({key, bgColor, hoverColor, value}: TagProps)
         }
 
         filterContext.setTags(filteredTags);
-        console.log("filtered tags: ", filteredTags);
     }
 
     return (
-        <span onClick={() => switchTag(value)} 
-            key={key} className={`m-1 inline-block ${isSelected ? 'bg-green-300' : bgColor} hover:${hoverColor} text-gray-800 text-md font-medium mr-2 px-2.5 py-0.5 rounded border border-gray-500`}>
+        <button onClick={() => switchTag(value)} 
+            key={props.key} className={`m-1 inline-block ${isSelected ? 'bg-green-300' : bgColor}  hover:bg-blue-300 text-gray-800 text-md font-medium mr-2 px-2.5 py-0.5 rounded border border-gray-500`}>
             {value}
-        </span>
+        </button>
     );
 }

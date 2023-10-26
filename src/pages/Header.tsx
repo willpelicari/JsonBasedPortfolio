@@ -3,7 +3,7 @@ import { useTranslation } from "react-i18next";
 import { PortfolioContext } from "../App";
 
 export function Header() {
-  const [t, i18n] = useTranslation();
+  const i18n = useTranslation()[1];
   const [showMenu, setMobileMenu] = useState(false);
 
   const content = useContext(PortfolioContext);
@@ -44,7 +44,7 @@ export function Header() {
       <nav className="sticky top-0 flex p-3 items-center justify-between flex-wrap bg-gray-900 text-white z-10">
         <div
           id="logo"
-          className="text-xs tracking-tight md:text-xl mr-6 flex-shrink-0"
+          className="text-lg tracking-tight md:text-xl mr-6 flex-shrink-0"
         >
           <span className="font-bold">{firstLogoPart}</span>
           <span>{secondLogoPart}</span>
@@ -71,14 +71,14 @@ export function Header() {
                 key={key}
                 href={menu.Link}
                 target={menu.Target}
-                className="block mt-4 lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4"
+                className="block mt-4 text-lg md:text-lg lg:inline-block lg:mt-0 text-blue-200 hover:text-white mr-4"
               >
                 {menu.Text}
               </a>
             ))}
           </div>
-          <div id="getCv" className="text-sm flex items-center">
-            <div className="mr-5">
+          <div id="getCv" className="text-sm flex items-center flex-col-reverse md:flex-row">
+            <div className="mr-5 flex">
               <button
                 className="mr-3"
                 onClick={() => i18n.changeLanguage("en")}
@@ -93,14 +93,19 @@ export function Header() {
               </button>
               <button
                 className="mr-3"
-                onClick={() => i18n.changeLanguage("pt")}
+                onClick={() => i18n.changeLanguage("es")}
               >
-                PT
+                ES
+              </button>
+              <button
+                className="mr-3"
+                onClick={() => i18n.changeLanguage("jp")}
+              >
+                JP
               </button>
             </div>
-            <a
+            <a className="px-4 py-2 mt-4 lg:mt-0 leading-none border rounded w-full md:w-auto hover:border-transparent text-center font-semibold mb-3 md:mb-auto hover:bg-white hover:text-gray-900"
               href={content.Header.ButtonCv.Link}
-              className="flex-col px-4 py-2 mt-4 lg:mt-0 leading-none border rounded hover:border-transparent hover:bg-white hover:text-gray-900"
             >
               {content.Header.ButtonCv.Text}
             </a>

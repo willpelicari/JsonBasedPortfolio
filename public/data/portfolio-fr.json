@@ -1,0 +1,185 @@
+{
+    "Header": {
+        "Logo": "Prénom Nom",
+        "Menu": [
+            {
+                "Text": "Accueil",
+                "Link": "#"
+            },
+            {
+                "Text": "À Propos",
+                "Link": "#values"
+            },
+            {
+                "Text": "Services",
+                "Link": "#toolbox"
+            },
+            {
+                "Text": "Portfolio",
+                "Link": "#experiences"
+            }
+        ],
+        "ButtonCv": {
+            "Text": "Télécharger le CV",
+            "Link": "https://s2.q4cdn.com/175719177/files/doc_presentations/Placeholder-PDF.pdf"
+        }
+    },
+    "Greeting": {
+        "Picture": "https://thispersondoesnotexist.com/",
+        "Message": "Développeur Passionné, Solutions Innovantes"
+    },
+    "About": {
+        "Title": "À Propos de Moi",
+        "Description": "Je suis un développeur Full Stack dévoué avec plus de 5 ans d'expérience dans la création de solutions web innovantes. Ma mission est de fournir des applications de haute qualité et conviviales adaptées à vos besoins."
+    },
+    "Values": {
+        "Title": "Mes Valeurs",
+        "Description": "Mes valeurs fondamentales définissent mon approche du développement web et des relations avec les clients :",
+        "ValuesList": [
+            "Excellence de la Qualité",
+            "Innovation",
+            "Satisfaction du Client",
+            "Apprentissage Continu",
+            "Collaboration"
+        ],
+        "Cards": [
+            {
+                "Icon": "https://picsum.photos/150/150.jpg?random=1",
+                "Title": "Expert en HTML5",
+                "Description": "Je me spécialise dans la création de sites web en HTML5 avec les normes et technologies les plus récentes."
+            },
+            {
+                "Icon": "https://picsum.photos/150/150.jpg?random=2",
+                "Title": "Styliste CSS3",
+                "Description": "Mon expertise en CSS3 garantit des conceptions web visuellement attrayantes et réactives."
+            },
+            {
+                "Icon": "https://picsum.photos/150/150.jpg?random=3",
+                "Title": "Passionné de JavaScript",
+                "Description": "J'adore utiliser JavaScript pour apporter de l'interactivité et de la fonctionnalité aux applications web."
+            }
+        ]
+    },
+    "Toolbox": {
+        "Title": "Ma Boîte à Outils",
+        "Description": "Découvrez mon expertise dans diverses technologies et cadres :",
+        "ToolsList": [
+            "React",
+            "Node.js",
+            "Vue.js",
+            "jQuery",
+            "SASS",
+            "Webpack",
+            "Git",
+            "JIRA"
+        ]
+    },
+    "Experiences": {
+        "Title": "Mon Portfolio",
+        "Entries": [
+            {
+                "Company": {
+                    "Logo": "https://picsum.photos/150/150.jpg?random=4",
+                    "Name": "Entreprise A",
+                    "Link": "http://www.entreprisea.com/"
+                },
+                "Job": {
+                    "Title": "Développeur Web",
+                    "Duration": "Depuis janvier 2022",
+                    "TechStack": [
+                        {
+                            "Category": "Technologies",
+                            "Stack": [
+                                "HTML5",
+                                "CSS3",
+                                "JavaScript"
+                            ]
+                        },
+                        {
+                            "Category": "Cadres et Bibliothèques",
+                            "Stack": [
+                                "React",
+                                "Node.js",
+                                "jQuery"
+                            ]
+                        },
+                        {
+                            "Category": "Méthodologies",
+                            "Stack": [
+                                "Agile",
+                                "Scrum"
+                            ]
+                        },
+                        {
+                            "Category": "Outils",
+                            "Stack": [
+                                "Git",
+                                "JIRA",
+                                "Webpack"
+                            ]
+                        }
+                    ],
+                    "Description": "J'ai contribué au développement d'applications web, en veillant à la qualité du code et à la réactivité. J'ai collaboré avec des équipes pluridisciplinaires pour atteindre les objectifs du projet."
+                }
+            },
+            {
+                "Company": {
+                    "Logo": "https://picsum.photos/150/150.jpg?random=5",
+                    "Name": "Entreprise B",
+                    "Link": "http://www.entrepriseb.com/"
+                },
+                "Job": {
+                    "Title": "Développeur Front-end",
+                    "Duration": "De mars 2021 à décembre 2021",
+                    "TechStack": [
+                        {
+                            "Category": "Technologies",
+                            "Stack": [
+                                "HTML5",
+                                "CSS3",
+                                "JavaScript"
+                            ]
+                        },
+                        {
+                            "Category": "Cadres et Bibliothèques",
+                            "Stack": [
+                                "Vue.js",
+                                "SASS",
+                                "jQuery"
+                            ]
+                        },
+                        {
+                            "Category": "Méthodologies",
+                            "Stack": [
+                                "Scrum"
+                            ]
+                        },
+                        {
+                            "Category": "Outils",
+                            "Stack": [
+                                "Git",
+                                "Bitbucket",
+                                "Gulp"
+                            ]
+                        }
+                    ],
+                    "Description": "J'ai créé et entretenu des conceptions front-end réactives pour des applications web. J'ai collaboré avec l'équipe de conception pour mettre en œuvre des interfaces utilisateur visuellement attrayantes."
+                }
+            }
+        ]
+    },
+    "Footer": {
+        "Message": "Projet développé par Wilton Peliçari",
+        "Link": "#",
+        "SocialMedia": [
+            {
+                "Icon": "./icons/linkedin.svg",
+                "Link": "https://www.linkedin.com/in/wiltonpelicari/"
+            },
+            {
+                "Icon": "./icons/github-mark.svg",
+                "Link": "https://github.com/willpelicari"
+            }
+        ]
+    }
+}

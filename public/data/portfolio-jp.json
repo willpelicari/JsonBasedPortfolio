@@ -35,13 +35,6 @@
     "Values": {
         "Title": "私の価値観",
         "Description": "私の基本的な価値観は、ウェブ開発とクライアントとの関係へのアプローチを定義しています。",
-        "ValuesList": [
-            "品質の卓越性",
-            "革新",
-            "顧客満足",
-            "継続的な学び",
-            "協力"
-        ],
         "Cards": [
             {
                 "Icon": "https://picsum.photos/150/150.jpg?random=1",
@@ -62,17 +55,7 @@
     },
     "Toolbox": {
         "Title": "私のツールボックス",
-        "Description": "さまざまな技術とフレームワークでの私の専門知識を探索してください。",
-        "ToolsList": [
-            "React",
-            "Node.js",
-            "Vue.js",
-            "jQuery",
-            "SASS",
-            "Webpack",
-            "Git",
-            "JIRA"
-        ]
+        "Description": "さまざまな技術とフレームワークでの私の専門知識を探索してください。"
     },
     "Experiences": {
         "Title": "私のポートフォリオ",
@@ -127,6 +110,13 @@
                     "Logo": "https://picsum.photos/150/150.jpg?random=5",
                     "Name": "会社B",
                     "Link": "http://www.companyb.com/"
+                },
+                "ThirdParty": {
+                    "Name": "GitHub",
+                    "Link": "https://github.com/willpelicari/JsonBasedPortfolio",
+                    "RibbonBgColor": "bg-green-400",
+                    "RibbonFontColor": "text-black",
+                    "RibbonDescription": "available on "
                 },
                 "Job": {
                     "Title": "フロントエンド開発者",

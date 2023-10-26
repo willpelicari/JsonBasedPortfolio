@@ -35,13 +35,6 @@
     "Values": {
         "Title": "Mes Valeurs",
         "Description": "Mes valeurs fondamentales définissent mon approche du développement web et des relations avec les clients :",
-        "ValuesList": [
-            "Excellence de la Qualité",
-            "Innovation",
-            "Satisfaction du Client",
-            "Apprentissage Continu",
-            "Collaboration"
-        ],
         "Cards": [
             {
                 "Icon": "https://picsum.photos/150/150.jpg?random=1",
@@ -62,17 +55,7 @@
     },
     "Toolbox": {
         "Title": "Ma Boîte à Outils",
-        "Description": "Découvrez mon expertise dans diverses technologies et cadres :",
-        "ToolsList": [
-            "React",
-            "Node.js",
-            "Vue.js",
-            "jQuery",
-            "SASS",
-            "Webpack",
-            "Git",
-            "JIRA"
-        ]
+        "Description": "Découvrez mon expertise dans diverses technologies et cadres :"
     },
     "Experiences": {
         "Title": "Mon Portfolio",
@@ -127,6 +110,13 @@
                     "Logo": "https://picsum.photos/150/150.jpg?random=5",
                     "Name": "Entreprise B",
                     "Link": "http://www.entrepriseb.com/"
+                },
+                "ThirdParty": {
+                    "Name": "GitHub",
+                    "Link": "https://github.com/willpelicari/JsonBasedPortfolio",
+                    "RibbonBgColor": "bg-green-400",
+                    "RibbonFontColor": "text-black",
+                    "RibbonDescription": "available on "
                 },
                 "Job": {
                     "Title": "Développeur Front-end",

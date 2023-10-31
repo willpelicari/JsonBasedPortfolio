@@ -5,7 +5,7 @@ export default function Footer() {
   const content = useContext(PortfolioContext)
 
   return (
-    <footer className="bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-100 shadow">
+    <footer className="bottom-0 left-0 z-20 w-full p-4 bg-white dark:bg-black text-black dark:text-white border-t border-gray-100 dark:border-gray-900 shadow">
       <div className="flex justify-between items-center">
         <div>
           <span className="align-bottom">{content.Footer.Message}</span>

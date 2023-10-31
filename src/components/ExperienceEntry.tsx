@@ -30,14 +30,14 @@ export default function ExperienceEntry({
           .some((tech) => filterContext.filteredTags.includes(tech))
       )
     }
-  }, [filterContext.filteredTags])
+  }, [entry.Job.TechStack, filterContext.filteredTags])
 
   return (
     entry && (
       <li
         className={`${
           !showExperience ? 'hidden' : 'block md:flex'
-        } items-center space-x-3 mb-10 bg-white shadow-sm px-4 py-8 rounded`}
+        } items-center space-x-3 mb-10 bg-slate-200 dark:bg-slate-800 text-black dark:text-white shadow-sm px-4 py-8 rounded`}
       >
         <div key={props.key} className="text-center w-fit mx-auto">
           <a
@@ -89,12 +89,7 @@ export default function ExperienceEntry({
             {entry.Job.TechStack.map((x) => x.Stack)
               .flat()
               .map((element, key) => (
-                <Tag
-                  key={key}
-                  value={element}
-                  bgColor="bg-gray-100"
-                  hoverColor="bg-blue-200"
-                />
+                <Tag key={key} value={element} />
               ))}
           </div>
           <div>

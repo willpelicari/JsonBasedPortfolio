@@ -14,7 +14,7 @@ export default function Section({
   return (
     <BasicSection id={id}>
       <div className="max-w-screen-xl mx-auto">
-        <div className="px-4 text-gray-800">
+        <div className="px-4 text-gray-800 dark:text-gray-200">
           <h2 className="text-3xl lg:text-4xl">{title}</h2>
           {description && (
             <p className="mt-6 lg:text-xl mb-10">{description}</p>

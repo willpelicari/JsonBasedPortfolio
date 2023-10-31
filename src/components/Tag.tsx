@@ -3,14 +3,12 @@ import { FilterContext } from '../pages/Home'
 
 interface TagProps {
   key: number
-  bgColor: string
-  hoverColor: string
+  bgColor?: string
   value: string
 }
 
 export default function Tag({
-  bgColor,
-  hoverColor,
+  bgColor = 'bg-gray-100 dark:bg-gray-900',
   value,
   ...props
 }: TagProps) {
@@ -39,8 +37,10 @@ export default function Tag({
       onClick={() => switchTag(value)}
       key={props.key}
       className={`m-1 inline-block ${
-        isSelected ? 'bg-green-300' : bgColor
-      }  hover:bg-blue-300 text-gray-800 text-md font-medium mr-2 px-2.5 py-0.5 rounded border border-gray-500`}
+        isSelected
+          ? 'text-green-700 dark:text-green-400 bg-green-500/10 dark:bg-green-950 ring-green-600/20 dark:ring-green-500/20'
+          : bgColor
+      }  hover:bg-blue-300 dark:hover:bg-blue-700 text-gray-800 dark:text-gray-200 text-md font-medium mr-2 px-2.5 py-0.5 rounded ring-2 ring-inset`}
     >
       {value}
     </button>

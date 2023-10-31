@@ -41,7 +41,7 @@ export default function Header() {
 
   return (
     content.Header && (
-      <nav className="sticky top-0 flex p-3 items-center justify-between flex-wrap bg-gray-900 text-white z-10">
+      <nav className="sticky top-0 flex p-3 items-center justify-between flex-wrap bg-slate-950 text-white z-10">
         <div
           id="logo"
           className="text-lg tracking-tight md:text-xl mr-6 flex-shrink-0"

@@ -23,7 +23,7 @@ export default function Home() {
   const [filteredTags, setTags] = useState<string[]>([])
 
   return (
-    <div className="bg-gray-50">
+    <div className="bg-slate-100 dark:bg-slate-900">
       {content.Greeting && (
         <Greeting
           mainPhotoPath={content.Greeting.Picture}

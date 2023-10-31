@@ -14,7 +14,7 @@ export default function Greeting({
       <div className="container max-w-screen-xl mx-auto px-4 mt-16">
         <header className="flex flex-col items-center lg:flex-row justify-between lg:mb-20">
           <div className="text-center lg:text-right lg:mr-10 mb-20 lg:mb-0">
-            <h1 className="font-bold text-gray-800 text-4xl md:text-5xl xl:text-6xl mb-10">
+            <h1 className="font-bold text-gray-700 dark:text-gray-300 text-4xl md:text-5xl xl:text-6xl mb-10">
               {greetingMessage}
             </h1>
           </div>

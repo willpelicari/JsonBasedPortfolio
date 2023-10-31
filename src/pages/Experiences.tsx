@@ -14,18 +14,13 @@ export function Career({ experiences }: CareerProps) {
 
   return (
     <Section id="experiences" title={experiences.Title}>
-      <div className="mt-10 p-8 mx-auto">
+      <div className="mt-10 mx-auto text-black dark:text-white">
         <div className="flex justify-between mx-2 my-4">
           {filterContext.filteredTags.length > 0 && (
             <p className="font-bold">
               Filtering experiences by:{' '}
               {filterContext.filteredTags.map((tag, key) => (
-                <Tag
-                  key={key}
-                  value={tag}
-                  bgColor="bg-gray-100"
-                  hoverColor="bg-blue-200"
-                />
+                <Tag key={key} value={tag} />
               ))}
             </p>
           )}

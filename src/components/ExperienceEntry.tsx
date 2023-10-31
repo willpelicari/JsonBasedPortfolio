@@ -44,6 +44,7 @@ export default function ExperienceEntry({
             href={entry.Company.Link}
             target="_blank"
             aria-label={entry.Company.Name}
+            rel="noreferrer"
           >
             {
               <img
@@ -54,6 +55,7 @@ export default function ExperienceEntry({
                   minHeight: 150,
                   marginRight: 5
                 }}
+                alt={entry.Company.Name}
               />
             }
           </a>
@@ -63,7 +65,11 @@ export default function ExperienceEntry({
             >
               {consultingText + ' '}
               {entry.ThirdParty.Name && (
-                <a href={entry.ThirdParty.Link} target="_blank">
+                <a
+                  href={entry.ThirdParty.Link}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {entry.ThirdParty.Name}
                 </a>
               )}

@@ -4,6 +4,7 @@ import './@types/CustomTypes'
 import { DefaultPortfolio, Portfolio } from './@types/CustomTypes'
 import './App.css'
 import { PortfolioContext } from './contexts/PortfolioContext'
+import { ThemeProvider } from './contexts/ThemeContext'
 import './i18n/config'
 import Footer from './pages/Footer'
 import Header from './pages/Header'
@@ -21,11 +22,13 @@ function App() {
 
   return (
     <>
-      <PortfolioContext.Provider value={content}>
-        <Header />
-        <Home />
-        <Footer />
-      </PortfolioContext.Provider>
+      <ThemeProvider>
+        <PortfolioContext.Provider value={content}>
+          <Header />
+          <Home />
+          <Footer />
+        </PortfolioContext.Provider>
+      </ThemeProvider>
     </>
   )
 }

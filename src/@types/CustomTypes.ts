@@ -138,3 +138,8 @@ export type FilterContextType = {
   filteredTags: string[]
   setTags: React.Dispatch<React.SetStateAction<string[]>>
 }
+
+export enum Themes {
+  dark = 'dark',
+  light = 'light'
+}

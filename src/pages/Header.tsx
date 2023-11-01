@@ -1,10 +1,14 @@
 import { useContext, useState } from 'react'
 import { useTranslation } from 'react-i18next'
+import { BsFillSunFill, BsMoonStarsFill } from 'react-icons/bs'
+import { Themes } from '../@types/CustomTypes'
 import { PortfolioContext } from '../contexts/PortfolioContext'
+import { ThemeContext } from '../contexts/ThemeContext'
 
 export default function Header() {
   const i18n = useTranslation()[1]
   const [showMenu, setMobileMenu] = useState(false)
+  const { theme, setTheme } = useContext(ThemeContext)
 
   const content = useContext(PortfolioContext)
   const [firstLogoPart, secondLogoPart] = buildLogo(content?.header?.logo)
@@ -37,6 +41,14 @@ export default function Header() {
     }
 
     return [firstPart.join(' '), secondPart.join(' ')]
+  }
+
+  function setNewTheme() {
+    if (theme === Themes.dark) {
+      setTheme(Themes.light)
+    } else {
+      setTheme(Themes.dark)
+    }
   }
 
   return (
@@ -81,6 +93,25 @@ export default function Header() {
             id="getCv"
             className="text-sm flex items-center flex-col-reverse md:flex-row"
           >
+            <div className="mr-5 mt-5 md:mt-auto flex">
+              <button
+                className="p-2 rounded-full bg-slate-500"
+                onClick={setNewTheme}
+              >
+                {theme === Themes.light && (
+                  <BsMoonStarsFill
+                    className="fill-slate-700 hover:fill-white/70"
+                    size={20}
+                  />
+                )}
+                {theme === Themes.dark && (
+                  <BsFillSunFill
+                    className="fill-slate-700 hover:fill-yellow-400"
+                    size={20}
+                  />
+                )}
+              </button>
+            </div>
             <div className="mr-5 flex">
               <button
                 className="mr-3"

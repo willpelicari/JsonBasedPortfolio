@@ -3,7 +3,7 @@ import { Experiences } from '../@types/CustomTypes'
 import ExperienceEntry from '../components/ExperienceEntry'
 import Section from '../components/Section'
 import Tag from '../components/Tag'
-import { FilterContext } from './Home'
+import { FilterContext } from '../contexts/FilterContext'
 
 interface CareerProps {
   experiences: Experiences

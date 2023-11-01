@@ -1,6 +1,6 @@
 import { useContext, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { PortfolioContext } from '../App'
+import { PortfolioContext } from '../contexts/PortfolioContext'
 
 export default function Header() {
   const i18n = useTranslation()[1]

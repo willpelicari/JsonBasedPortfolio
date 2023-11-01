@@ -1,14 +1,13 @@
-import { createContext, useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import './@types/CustomTypes'
 import { DefaultPortfolio, Portfolio } from './@types/CustomTypes'
 import './App.css'
+import { PortfolioContext } from './contexts/PortfolioContext'
 import './i18n/config'
 import Footer from './pages/Footer'
 import Header from './pages/Header'
 import Home from './pages/Home'
-
-export const PortfolioContext = createContext<Portfolio>(DefaultPortfolio)
 
 function App() {
   const [content, setContent] = useState<Portfolio>(DefaultPortfolio)

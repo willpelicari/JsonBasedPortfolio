@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react'
-import { FilterContext } from '../pages/Home'
+import { FilterContext } from '../contexts/FilterContext'
 
 interface TagProps {
   key: number

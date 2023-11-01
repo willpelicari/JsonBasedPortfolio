@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react'
 import { Entry } from '../@types/CustomTypes'
-import { FilterContext } from '../pages/Home'
+import { FilterContext } from '../contexts/FilterContext'
 import Tag from './Tag'
 
 interface ExperienceEntryProps {

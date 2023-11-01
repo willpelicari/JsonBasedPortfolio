@@ -8,18 +8,18 @@ export default function Footer() {
     <footer className="bottom-0 left-0 z-20 w-full p-4 bg-white dark:bg-black text-black dark:text-white border-t border-gray-100 dark:border-gray-900 shadow">
       <div className="flex justify-between items-center">
         <div>
-          <span className="align-bottom">{content.Footer.Message}</span>
+          <span className="align-bottom">{content.footer.message}</span>
         </div>
         <div className="flex items-center">
-          {content.Footer.SocialMedia.map((social, key) => (
+          {content.footer.socialMedia.map((social, key) => (
             <a
               key={key}
               target="_blank"
               rel="noreferrer"
-              href={social.Link}
+              href={social.link}
               className="p-0.5"
             >
-              <img src={social.Icon} alt="social icon" className="w-10 h-10" />
+              <img src={social.icon} alt="social icon" className="w-10 h-10" />
             </a>
           ))}
         </div>

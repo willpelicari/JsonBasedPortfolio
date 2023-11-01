@@ -61,32 +61,32 @@ npm run start
 Here's a summary of how each field in JSON file affects your portfolio:
 
 - Header:
-  - Logo: Created based on what you write in `Header.Logo`:
+  - Logo: Created based on what you write in `header.logo`:
     - Single word values are displayed in bold;
     - Two-word values will have the first part in bold, the second is displayed normally;
     - Three-word values will have the first word in bold, the rest displayed normally;
     - Four-word values will have two words in bold, the rest displayed normally;
     - And so on...
   - Menu Links:
-    - Mapped from `Header.Menu` array displaying given text then redirecting to the given link in a new tab;
+    - Mapped from `header.menu` array displaying given text then redirecting to the given link in a new tab;
   - Languages:
-    - Each language uses a different JSON file and can be found with how file name ends (i.e. -en.json for english portfolio). This only part not 100% configurable via JSON file because you need to manually add a new link in `Header.tsx`. This project comes with four languages as examples. You can remove, modify or add new ones based on what is provided;
+    - Each language uses a different JSON file and can be found with how file name ends (i.e. -en.json for english portfolio). This only part not 100% configurable via JSON file because you need to manually add a new link in `header.tsx`. This project comes with four languages as examples. You can remove, modify or add new ones based on what is provided;
   - Download button:
-    - Button shown at the top right corner of the website. Configurable via `Header.ButtonCv` with text and link;
+    - Button shown at the top right corner of the website. Configurable via `header.buttonCv` with text and link;
 - Greetings (main photo and message/quote):
-  - Picture: link provided from `Greeting.Picture`
-  - Message: The message / quote placed at the right of the photo, found in `Greeting.Message`;
+  - Picture: link provided from `greeting.picture`
+  - Message: The message / quote placed at the right of the photo, found in `greeting.message`;
 - About:
-  - Title and Description that comes right your greeting section. Here you can give a title (`About.Title`) and description (`About.Description`) with whatever information you want. Very straight-forward;
+  - Title and Description that comes right your greeting section. Here you can give a title (`about.title`) and description (`about.description`) with whatever information you want. Very straight-forward;
 - Values:
-  - Cards shown right after About section. Developed thinking on what distinguish you from the others so you can add an icon (`Values.Cards.Icon`), Title (`Values.Cards.Title`) and Description (`Values.Cards.Description`);
+  - Cards shown right after About section. Developed thinking on what distinguish you from the others so you can add an icon (`values.cards.icon`), Title (`values.cards.title`) and Description (`values.cards.description`);
 - Toolbox:
-  - This section is a bit special since it lists every stack you've added on each job entry, **this is case-sensitive so be sure you're writing the exact same word when it's intended**. In order to populate it with categories and tags you have to add a new item in `Experiences.Entries.Job.TechStack`. Every different category and stack value is added here so it can filter your experience when such tag is clicked;
+  - This section is a bit special since it lists every stack you've added on each job entry, **this is case-sensitive so be sure you're writing the exact same word when it's intended**. In order to populate it with categories and tags you have to add a new item in `experiences.entries.job.techStack`. Every different category and stack value is added here so it can filter your experience when such tag is clicked;
 - Experiences:
   - Company:
     - You can add information regarding the company such as Logo, name (used for acessibility) then link;
   - Third Party:
-    - If you were not working directly for that company and you want to precise it was a contract or add whichever other information you want below your company's logo you can do so by adding a **ThirdParty** section with a name (`ThirdParty.Name`), link (`ThirdParty.Link`), ribbon's color (`ThirdParty.RibbonBgColor`), ribbon's text color (`ThirdParty.RibbonFontColor`) and a description (`ThirdParty.TibbonDescription`) that will preceed its company name;
+    - If you were not working directly for that company and you want to precise it was a contract or add whichever other information you want below your company's logo you can do so by adding a **ThirdParty** section with a name (`thirdParty.name`), link (`thirdParty.link`), ribbon's color (`thirdParty.ribbonBgColor`), ribbon's text color (`thirdParty.ribbonFontColor`) and a description (`thirdParty.ribbonDescription`) that will preceed its company name;
   - Job:
     - Provide it with a title, duration and tech stacks (so it gets listed and filtered by Toolbox section);
 - Footer:

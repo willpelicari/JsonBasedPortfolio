@@ -1,145 +1,145 @@
 {
-  "Header": {
-    "Logo": "First Name Last Name",
-    "Menu": [
+  "header": {
+    "logo": "First Name Last Name",
+    "menu": [
       {
-        "Text": "Home",
-        "Link": "#"
+        "text": "Home",
+        "link": "#"
       },
       {
-        "Text": "About Me",
-        "Link": "#values"
+        "text": "About Me",
+        "link": "#values"
       },
       {
-        "Text": "Services",
-        "Link": "#toolbox"
+        "text": "Services",
+        "link": "#toolbox"
       },
       {
-        "Text": "Portfolio",
-        "Link": "#experiences"
+        "text": "Portfolio",
+        "link": "#experiences"
       }
     ],
-    "ButtonCv": {
-      "Text": "Download CV",
-      "Link": "https://s2.q4cdn.com/175719177/files/doc_presentations/Placeholder-PDF.pdf"
+    "buttonCv": {
+      "text": "Download CV",
+      "link": "https://s2.q4cdn.com/175719177/files/doc_presentations/Placeholder-PDF.pdf"
     }
   },
-  "Greeting": {
-    "Picture": "https://thispersondoesnotexist.com/",
-    "Message": "Passionate Developer, Innovative Solutions"
+  "greeting": {
+    "picture": "https://thispersondoesnotexist.com/",
+    "message": "Passionate Developer, Innovative Solutions"
   },
-  "About": {
-    "Title": "About Me",
-    "Description": "I'm a dedicated Full Stack Developer with over 5 years of experience in creating innovative web solutions. My mission is to deliver high-quality and user-friendly applications tailored to your needs."
+  "about": {
+    "title": "About Me",
+    "description": "I'm a dedicated Full Stack Developer with over 5 years of experience in creating innovative web solutions. My mission is to deliver high-quality and user-friendly applications tailored to your needs."
   },
-  "Values": {
-    "Title": "My Values",
-    "Description": "My core values define my approach to web development and client relationships:",
-    "Cards": [
+  "values": {
+    "title": "My Values",
+    "description": "My core values define my approach to web development and client relationships:",
+    "cards": [
       {
-        "Icon": "https://picsum.photos/150/150.jpg?random=1",
-        "Title": "HTML5 Expert",
-        "Description": "I specialize in creating HTML5 websites with the latest standards and technologies."
+        "icon": "https://picsum.photos/150/150.jpg?random=1",
+        "title": "HTML5 Expert",
+        "description": "I specialize in creating HTML5 websites with the latest standards and technologies."
       },
       {
-        "Icon": "https://picsum.photos/150/150.jpg?random=2",
-        "Title": "CSS3 Stylist",
-        "Description": "My expertise in CSS3 ensures visually appealing and responsive web designs."
+        "icon": "https://picsum.photos/150/150.jpg?random=2",
+        "title": "CSS3 Stylist",
+        "description": "My expertise in CSS3 ensures visually appealing and responsive web designs."
       },
       {
-        "Icon": "https://picsum.photos/150/150.jpg?random=3",
-        "Title": "JavaScript Enthusiast",
-        "Description": "I love using JavaScript to bring interactivity and functionality to web applications."
+        "icon": "https://picsum.photos/150/150.jpg?random=3",
+        "title": "JavaScript Enthusiast",
+        "description": "I love using JavaScript to bring interactivity and functionality to web applications."
       }
     ]
   },
-  "Toolbox": {
-    "Title": "My Toolbox",
-    "Description": "Explore my expertise in various technologies and frameworks:"
+  "toolbox": {
+    "title": "My Toolbox",
+    "description": "Explore my expertise in various technologies and frameworks:"
   },
-  "Experiences": {
-    "Title": "My Portfolio",
-    "Entries": [
+  "experiences": {
+    "title": "My Portfolio",
+    "entries": [
       {
-        "Company": {
-          "Logo": "https://picsum.photos/150/150.jpg?random=4",
-          "Name": "Company A",
-          "Link": "http://www.companya.com/"
+        "company": {
+          "logo": "https://picsum.photos/150/150.jpg?random=4",
+          "name": "Company A",
+          "link": "http://www.companya.com/"
         },
-        "Job": {
-          "Title": "Web Developer",
-          "Duration": "Since January 2022",
-          "TechStack": [
+        "job": {
+          "title": "Web Developer",
+          "duration": "Since January 2022",
+          "techStack": [
             {
-              "Category": "Technologies",
-              "Stack": ["HTML5", "CSS3", "JavaScript"]
+              "category": "Technologies",
+              "stack": ["HTML5", "CSS3", "JavaScript"]
             },
             {
-              "Category": "Framework & Libraries",
-              "Stack": ["React", "Node.js", "jQuery"]
+              "category": "Framework & Libraries",
+              "stack": ["React", "Node.js", "jQuery"]
             },
             {
-              "Category": "Methodologies",
-              "Stack": ["Agile", "Scrum"]
+              "category": "Methodologies",
+              "stack": ["Agile", "Scrum"]
             },
             {
-              "Category": "Tools",
-              "Stack": ["Git", "JIRA", "Webpack"]
+              "category": "Tools",
+              "stack": ["Git", "JIRA", "Webpack"]
             }
           ],
-          "Description": "I contributed to the development of web applications, ensuring high-quality code and responsiveness. Collaborated with cross-functional teams to meet project goals."
+          "description": "I contributed to the development of web applications, ensuring high-quality code and responsiveness. Collaborated with cross-functional teams to meet project goals."
         }
       },
       {
-        "Company": {
-          "Logo": "https://picsum.photos/150/150.jpg?random=5",
-          "Name": "Company B",
-          "Link": "http://www.companyb.com/"
+        "company": {
+          "logo": "https://picsum.photos/150/150.jpg?random=5",
+          "name": "Company B",
+          "link": "http://www.companyb.com/"
         },
-        "ThirdParty": {
-          "Name": "GitHub",
-          "Link": "https://github.com/willpelicari/JsonBasedPortfolio",
-          "RibbonBgColor": "bg-green-400",
-          "RibbonFontColor": "text-black",
-          "RibbonDescription": "available on "
+        "thirdParty": {
+          "name": "GitHub",
+          "link": "https://github.com/willpelicari/JsonBasedPortfolio",
+          "ribbonBgColor": "bg-green-400",
+          "ribbonFontColor": "text-black",
+          "ribbonDescription": "available on "
         },
-        "Job": {
-          "Title": "Front-end Developer",
-          "Duration": "March 2021 to December 2021",
-          "TechStack": [
+        "job": {
+          "title": "Front-end Developer",
+          "duration": "March 2021 to December 2021",
+          "techStack": [
             {
-              "Category": "Technologies",
-              "Stack": ["HTML5", "CSS3", "JavaScript"]
+              "category": "Technologies",
+              "stack": ["HTML5", "CSS3", "JavaScript"]
             },
             {
-              "Category": "Framework & Libraries",
-              "Stack": ["Vue.js", "SASS", "jQuery"]
+              "category": "Framework & Libraries",
+              "stack": ["Vue.js", "SASS", "jQuery"]
             },
             {
-              "Category": "Methodologies",
-              "Stack": ["Scrum"]
+              "category": "Methodologies",
+              "stack": ["Scrum"]
             },
             {
-              "Category": "Tools",
-              "Stack": ["Git", "Bitbucket", "Gulp"]
+              "category": "Tools",
+              "stack": ["Git", "Bitbucket", "Gulp"]
             }
           ],
-          "Description": "I created and maintained responsive front-end designs for web applications. Collaborated with the design team to implement visually appealing user interfaces."
+          "description": "I created and maintained responsive front-end designs for web applications. Collaborated with the design team to implement visually appealing user interfaces."
         }
       }
     ]
   },
-  "Footer": {
-    "Message": "Project developed by Wilton Peliçari",
-    "Link": "#",
-    "SocialMedia": [
+  "footer": {
+    "message": "Project developed by Wilton Peliçari",
+    "link": "#",
+    "socialMedia": [
       {
-        "Icon": "./icons/linkedin.svg",
-        "Link": "https://www.linkedin.com/in/wiltonpelicari/"
+        "icon": "./icons/linkedin.svg",
+        "link": "https://www.linkedin.com/in/wiltonpelicari/"
       },
       {
-        "Icon": "./icons/github-mark.svg",
-        "Link": "https://github.com/willpelicari"
+        "icon": "./icons/github-mark.svg",
+        "link": "https://github.com/willpelicari"
       }
     ]
   }

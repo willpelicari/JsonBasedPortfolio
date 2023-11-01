@@ -1,135 +1,135 @@
 // Header
 export type Button = {
-  Text: string
-  Link: string
+  text: string
+  link: string
 }
 
 export type MenuAnchor = {
-  Text: string
-  Link: string
-  Target?: string
+  text: string
+  link: string
+  target?: string
 }
 
 export type Header = {
-  Logo: string
-  Menu: MenuAnchor[]
-  ButtonCv: Button
+  logo: string
+  menu: MenuAnchor[]
+  buttonCv: Button
 }
 
 // Greetings
 export type Greetings = {
-  Picture: string
-  Message: string
+  picture: string
+  message: string
 }
 
 // Values
 export type Card = {
-  Icon: string
-  Title: string
-  Description: string
+  icon: string
+  title: string
+  description: string
 }
 
 export type Values = {
-  Title: string
-  Description: string
-  Cards: Card[]
+  title: string
+  description: string
+  cards: Card[]
 }
 
 // Toolbox
 export type Toolbox = {
-  Title: string
-  Description: string
+  title: string
+  description: string
 }
 
 // Experiences
 export type Company = {
-  Logo: string
-  Name: string
-  Link: string
+  logo: string
+  name: string
+  link: string
 }
 
 export type ThirdParty = {
-  Name: string
-  Link: string
-  RibbonBgColor: string
-  RibbonFontColor: string
-  RibbonDescription: string
+  name: string
+  link: string
+  ribbonBgColor: string
+  ribbonFontColor: string
+  ribbonDescription: string
 }
 
 export type TechStack = {
-  Category: string
-  Stack: string[]
+  category: string
+  stack: string[]
 }
 
 export type Job = {
-  Title: string
-  Duration: string
-  TechStack: TechStack[]
-  Description: string
+  title: string
+  duration: string
+  techStack: TechStack[]
+  description: string
 }
 
 export type Entry = {
-  Company: Company
-  ThirdParty: ThirdParty
-  Job: Job
+  company: Company
+  thirdParty: ThirdParty
+  job: Job
 }
 
 export type Experiences = {
-  Title: string
-  Entries: Entry[]
+  title: string
+  entries: Entry[]
 }
 
 // Footer
 export type SocialMedia = {
-  Icon: string
-  Link: string
+  icon: string
+  link: string
 }
 
 export type Footer = {
-  Message: string
-  Link: string
-  SocialMedia: SocialMedia[]
+  message: string
+  link: string
+  socialMedia: SocialMedia[]
 }
 
 // Portfolio
 export type Portfolio = {
-  Header: Header
-  Greeting: Greetings
-  Values: Values
-  Toolbox: Toolbox
-  Experiences: Experiences
-  Footer: Footer
+  header: Header
+  greeting: Greetings
+  values: Values
+  toolbox: Toolbox
+  experiences: Experiences
+  footer: Footer
 }
 
 export const DefaultPortfolio = {
-  Header: {
-    Logo: '',
-    Menu: [],
-    ButtonCv: {
-      Text: '',
-      Link: ''
+  header: {
+    logo: '',
+    menu: [],
+    buttonCv: {
+      text: '',
+      link: ''
     }
   },
-  Greeting: {
-    Picture: '',
-    Message: ''
+  greeting: {
+    picture: '',
+    message: ''
   },
-  Values: {
-    Title: '',
-    Description: '',
-    Cards: []
+  values: {
+    title: '',
+    description: '',
+    cards: []
   },
-  Toolbox: {
-    Title: '',
-    Description: ''
+  toolbox: {
+    title: '',
+    description: ''
   },
-  Experiences: {
-    Title: '',
-    Entries: []
+  experiences: {
+    title: '',
+    entries: []
   },
-  Footer: {
-    Message: '',
-    Link: '',
-    SocialMedia: []
+  footer: {
+    message: '',
+    link: '',
+    socialMedia: []
   }
 }

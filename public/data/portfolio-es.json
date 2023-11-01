@@ -1,145 +1,145 @@
 {
-  "Header": {
-    "Logo": "Nombre Apellido",
-    "Menu": [
+  "header": {
+    "logo": "Nombre Apellido",
+    "menu": [
       {
-        "Text": "Inicio",
-        "Link": "#"
+        "text": "Inicio",
+        "link": "#"
       },
       {
-        "Text": "Acerca de Mí",
-        "Link": "#values"
+        "text": "Acerca de Mí",
+        "link": "#values"
       },
       {
-        "Text": "Servicios",
-        "Link": "#toolbox"
+        "text": "Servicios",
+        "link": "#toolbox"
       },
       {
-        "Text": "Portafolio",
-        "Link": "#experiences"
+        "text": "Portafolio",
+        "link": "#experiences"
       }
     ],
-    "ButtonCv": {
-      "Text": "Descargar CV",
-      "Link": "https://s2.q4cdn.com/175719177/files/doc_presentations/Placeholder-PDF.pdf"
+    "buttonCv": {
+      "text": "Descargar CV",
+      "link": "https://s2.q4cdn.com/175719177/files/doc_presentations/Placeholder-PDF.pdf"
     }
   },
-  "Greeting": {
-    "Picture": "https://thispersondoesnotexist.com/",
-    "Message": "Desarrollador Apasionado, Soluciones Innovadoras"
+  "greeting": {
+    "picture": "https://thispersondoesnotexist.com/",
+    "message": "Desarrollador Apasionado, Soluciones Innovadoras"
   },
-  "About": {
-    "Title": "Acerca de Mí",
-    "Description": "Soy un dedicado Desarrollador Full Stack con más de 5 años de experiencia en la creación de soluciones web innovadoras. Mi misión es entregar aplicaciones de alta calidad y fáciles de usar, adaptadas a sus necesidades."
+  "about": {
+    "title": "Acerca de Mí",
+    "description": "Soy un dedicado Desarrollador Full Stack con más de 5 años de experiencia en la creación de soluciones web innovadoras. Mi misión es entregar aplicaciones de alta calidad y fáciles de usar, adaptadas a sus necesidades."
   },
-  "Values": {
-    "Title": "Mis Valores",
-    "Description": "Mis valores fundamentales definen mi enfoque en el desarrollo web y las relaciones con los clientes:",
-    "Cards": [
+  "values": {
+    "title": "Mis Valores",
+    "description": "Mis valores fundamentales definen mi enfoque en el desarrollo web y las relaciones con los clientes:",
+    "cards": [
       {
-        "Icon": "https://picsum.photos/150/150.jpg?random=1",
-        "Title": "Experto en HTML5",
-        "Description": "Me especializo en la creación de sitios web en HTML5 con los últimos estándares y tecnologías."
+        "icon": "https://picsum.photos/150/150.jpg?random=1",
+        "title": "Experto en HTML5",
+        "description": "Me especializo en la creación de sitios web en HTML5 con los últimos estándares y tecnologías."
       },
       {
-        "Icon": "https://picsum.photos/150/150.jpg?random=2",
-        "Title": "Especialista en CSS3",
-        "Description": "Mi experiencia en CSS3 garantiza diseños web visualmente atractivos y receptivos."
+        "icon": "https://picsum.photos/150/150.jpg?random=2",
+        "title": "Especialista en CSS3",
+        "description": "Mi experiencia en CSS3 garantiza diseños web visualmente atractivos y receptivos."
       },
       {
-        "Icon": "https://picsum.photos/150/150.jpg?random=3",
-        "Title": "Entusiasta de JavaScript",
-        "Description": "Me encanta usar JavaScript para brindar interactividad y funcionalidad a las aplicaciones web."
+        "icon": "https://picsum.photos/150/150.jpg?random=3",
+        "title": "Entusiasta de JavaScript",
+        "description": "Me encanta usar JavaScript para brindar interactividad y funcionalidad a las aplicaciones web."
       }
     ]
   },
-  "Toolbox": {
-    "Title": "Mi Caja de Herramientas",
-    "Description": "Explore mi experiencia en varias tecnologías y marcos de trabajo:"
+  "toolbox": {
+    "title": "Mi Caja de Herramientas",
+    "description": "Explore mi experiencia en varias tecnologías y marcos de trabajo:"
   },
-  "Experiences": {
-    "Title": "Mi Portafolio",
-    "Entries": [
+  "experiences": {
+    "title": "Mi Portafolio",
+    "entries": [
       {
-        "Company": {
-          "Logo": "https://picsum.photos/150/150.jpg?random=4",
-          "Name": "Empresa A",
-          "Link": "http://www.companya.com/"
+        "company": {
+          "logo": "https://picsum.photos/150/150.jpg?random=4",
+          "name": "Empresa A",
+          "link": "http://www.companya.com/"
         },
-        "Job": {
-          "Title": "Desarrollador Web",
-          "Duration": "Desde enero de 2022",
-          "TechStack": [
+        "job": {
+          "title": "Desarrollador Web",
+          "duration": "Desde enero de 2022",
+          "techStack": [
             {
-              "Category": "Tecnologías",
-              "Stack": ["HTML5", "CSS3", "JavaScript"]
+              "category": "Tecnologías",
+              "stack": ["HTML5", "CSS3", "JavaScript"]
             },
             {
-              "Category": "Frameworks y Bibliotecas",
-              "Stack": ["React", "Node.js", "jQuery"]
+              "category": "Frameworks y Bibliotecas",
+              "stack": ["React", "Node.js", "jQuery"]
             },
             {
-              "Category": "Metodologías",
-              "Stack": ["Ágil", "Scrum"]
+              "category": "Metodologías",
+              "stack": ["Ágil", "Scrum"]
             },
             {
-              "Category": "Herramientas",
-              "Stack": ["Git", "JIRA", "Webpack"]
+              "category": "Herramientas",
+              "stack": ["Git", "JIRA", "Webpack"]
             }
           ],
-          "Description": "Contribuí al desarrollo de aplicaciones web, asegurando código de alta calidad y capacidad de respuesta. Colaboré con equipos interfuncionales para alcanzar los objetivos del proyecto."
+          "description": "Contribuí al desarrollo de aplicaciones web, asegurando código de alta calidad y capacidad de respuesta. Colaboré con equipos interfuncionales para alcanzar los objetivos del proyecto."
         }
       },
       {
-        "Company": {
-          "Logo": "https://picsum.photos/150/150.jpg?random=5",
-          "Name": "Empresa B",
-          "Link": "http://www.companyb.com/"
+        "company": {
+          "logo": "https://picsum.photos/150/150.jpg?random=5",
+          "name": "Empresa B",
+          "link": "http://www.companyb.com/"
         },
-        "ThirdParty": {
-          "Name": "GitHub",
-          "Link": "https://github.com/willpelicari/JsonBasedPortfolio",
-          "RibbonBgColor": "bg-green-400",
-          "RibbonFontColor": "text-black",
-          "RibbonDescription": "available on "
+        "thirdParty": {
+          "name": "GitHub",
+          "link": "https://github.com/willpelicari/JsonBasedPortfolio",
+          "ribbonBgColor": "bg-green-400",
+          "ribbonFontColor": "text-black",
+          "ribbonDescription": "available on "
         },
-        "Job": {
-          "Title": "Desarrollador Front-end",
-          "Duration": "Marzo de 2021 a diciembre de 2021",
-          "TechStack": [
+        "job": {
+          "title": "Desarrollador Front-end",
+          "duration": "Marzo de 2021 a diciembre de 2021",
+          "techStack": [
             {
-              "Category": "Tecnologías",
-              "Stack": ["HTML5", "CSS3", "JavaScript"]
+              "category": "Tecnologías",
+              "stack": ["HTML5", "CSS3", "JavaScript"]
             },
             {
-              "Category": "Frameworks y Bibliotecas",
-              "Stack": ["Vue.js", "SASS", "jQuery"]
+              "category": "Frameworks y Bibliotecas",
+              "stack": ["Vue.js", "SASS", "jQuery"]
             },
             {
-              "Category": "Metodologías",
-              "Stack": ["Scrum"]
+              "category": "Metodologías",
+              "stack": ["Scrum"]
             },
             {
-              "Category": "Herramientas",
-              "Stack": ["Git", "Bitbucket", "Gulp"]
+              "category": "Herramientas",
+              "stack": ["Git", "Bitbucket", "Gulp"]
             }
           ],
-          "Description": "Creé y mantuve diseños front-end receptivos para aplicaciones web. Colaboré con el equipo de diseño para implementar interfaces de usuario visualmente atractivas."
+          "description": "Creé y mantuve diseños front-end receptivos para aplicaciones web. Colaboré con el equipo de diseño para implementar interfaces de usuario visualmente atractivas."
         }
       }
     ]
   },
-  "Footer": {
-    "Message": "Proyecto desarrollado por Wilton Peliçari",
-    "Link": "#",
-    "SocialMedia": [
+  "footer": {
+    "message": "Proyecto desarrollado por Wilton Peliçari",
+    "link": "#",
+    "socialMedia": [
       {
-        "Icon": "./icons/linkedin.svg",
-        "Link": "https://www.linkedin.com/in/wiltonpelicari/"
+        "icon": "./icons/linkedin.svg",
+        "link": "https://www.linkedin.com/in/wiltonpelicari/"
       },
       {
-        "Icon": "./icons/github-mark.svg",
-        "Link": "https://github.com/willpelicari"
+        "icon": "./icons/github-mark.svg",
+        "link": "https://github.com/willpelicari"
       }
     ]
   }

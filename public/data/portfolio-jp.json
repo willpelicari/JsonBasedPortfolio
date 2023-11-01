@@ -1,145 +1,145 @@
 {
-  "Header": {
-    "Logo": "名字 名前",
-    "Menu": [
+  "header": {
+    "logo": "名字 名前",
+    "menu": [
       {
-        "Text": "ホーム",
-        "Link": "#"
+        "text": "ホーム",
+        "link": "#"
       },
       {
-        "Text": "自己紹介",
-        "Link": "#values"
+        "text": "自己紹介",
+        "link": "#values"
       },
       {
-        "Text": "サービス",
-        "Link": "#toolbox"
+        "text": "サービス",
+        "link": "#toolbox"
       },
       {
-        "Text": "ポートフォリオ",
-        "Link": "#experiences"
+        "text": "ポートフォリオ",
+        "link": "#experiences"
       }
     ],
-    "ButtonCv": {
-      "Text": "履歴書のダウンロード",
-      "Link": "https://s2.q4cdn.com/175719177/files/doc_presentations/Placeholder-PDF.pdf"
+    "buttonCv": {
+      "text": "履歴書のダウンロード",
+      "link": "https://s2.q4cdn.com/175719177/files/doc_presentations/Placeholder-PDF.pdf"
     }
   },
-  "Greeting": {
-    "Picture": "https://thispersondoesnotexist.com/",
-    "Message": "情熱的な開発者、革新的なソリューション"
+  "greeting": {
+    "picture": "https://thispersondoesnotexist.com/",
+    "message": "情熱的な開発者、革新的なソリューション"
   },
-  "About": {
-    "Title": "自己紹介",
-    "Description": "私は5年以上の経験を持つ献身的なフルスタック開発者です。私の使命は、お客様のニーズに合った高品質でユーザーフレンドリーなアプリケーションを提供することです。"
+  "about": {
+    "title": "自己紹介",
+    "description": "私は5年以上の経験を持つ献身的なフルスタック開発者です。私の使命は、お客様のニーズに合った高品質でユーザーフレンドリーなアプリケーションを提供することです。"
   },
-  "Values": {
-    "Title": "私の価値観",
-    "Description": "私の基本的な価値観は、ウェブ開発とクライアントとの関係へのアプローチを定義しています。",
-    "Cards": [
+  "values": {
+    "title": "私の価値観",
+    "description": "私の基本的な価値観は、ウェブ開発とクライアントとの関係へのアプローチを定義しています。",
+    "cards": [
       {
-        "Icon": "https://picsum.photos/150/150.jpg?random=1",
-        "Title": "HTML5 エキスパート",
-        "Description": "私は最新の標準と技術を使用してHTML5ウェブサイトを作成するのが専門です。"
+        "icon": "https://picsum.photos/150/150.jpg?random=1",
+        "title": "HTML5 エキスパート",
+        "description": "私は最新の標準と技術を使用してHTML5ウェブサイトを作成するのが専門です。"
       },
       {
-        "Icon": "https://picsum.photos/150/150.jpg?random=2",
-        "Title": "CSS3 スタイリスト",
-        "Description": "CSS3の専門知識により、視覚的に魅力的でレスポンシブなウェブデザインを実現します。"
+        "icon": "https://picsum.photos/150/150.jpg?random=2",
+        "title": "CSS3 スタイリスト",
+        "description": "CSS3の専門知識により、視覚的に魅力的でレスポンシブなウェブデザインを実現します。"
       },
       {
-        "Icon": "https://picsum.photos/150/150.jpg?random=3",
-        "Title": "JavaScript エンスージアスト",
-        "Description": "私はJavaScriptを使用してウェブアプリケーションに対話性と機能性をもたらすことが大好きです。"
+        "icon": "https://picsum.photos/150/150.jpg?random=3",
+        "title": "JavaScript エンスージアスト",
+        "description": "私はJavaScriptを使用してウェブアプリケーションに対話性と機能性をもたらすことが大好きです。"
       }
     ]
   },
-  "Toolbox": {
-    "Title": "私のツールボックス",
-    "Description": "さまざまな技術とフレームワークでの私の専門知識を探索してください。"
+  "toolbox": {
+    "title": "私のツールボックス",
+    "description": "さまざまな技術とフレームワークでの私の専門知識を探索してください。"
   },
-  "Experiences": {
-    "Title": "私のポートフォリオ",
-    "Entries": [
+  "experiences": {
+    "title": "私のポートフォリオ",
+    "entries": [
       {
-        "Company": {
-          "Logo": "https://picsum.photos/150/150.jpg?random=4",
-          "Name": "会社A",
-          "Link": "http://www.companya.com/"
+        "company": {
+          "logo": "https://picsum.photos/150/150.jpg?random=4",
+          "name": "会社A",
+          "link": "http://www.companya.com/"
         },
-        "Job": {
-          "Title": "Web開発者",
-          "Duration": "2022年1月から",
-          "TechStack": [
+        "job": {
+          "title": "Web開発者",
+          "duration": "2022年1月から",
+          "techStack": [
             {
-              "Category": "テクノロジー",
-              "Stack": ["HTML5", "CSS3", "JavaScript"]
+              "category": "テクノロジー",
+              "stack": ["HTML5", "CSS3", "JavaScript"]
             },
             {
-              "Category": "フレームワークとライブラリ",
-              "Stack": ["React", "Node.js", "jQuery"]
+              "category": "フレームワークとライブラリ",
+              "stack": ["React", "Node.js", "jQuery"]
             },
             {
-              "Category": "メソドロジー",
-              "Stack": ["アジャイル", "スクラム"]
+              "category": "メソドロジー",
+              "stack": ["アジャイル", "スクラム"]
             },
             {
-              "Category": "ツール",
-              "Stack": ["Git", "JIRA", "Webpack"]
+              "category": "ツール",
+              "stack": ["Git", "JIRA", "Webpack"]
             }
           ],
-          "Description": "私はウェブアプリケーションの開発に貢献し、高品質なコードとレスポンシブ対応を確保しました。プロジェクト目標を達成するためにクロスファンクショナルチームと協力しました。"
+          "description": "私はウェブアプリケーションの開発に貢献し、高品質なコードとレスポンシブ対応を確保しました。プロジェクト目標を達成するためにクロスファンクショナルチームと協力しました。"
         }
       },
       {
-        "Company": {
-          "Logo": "https://picsum.photos/150/150.jpg?random=5",
-          "Name": "会社B",
-          "Link": "http://www.companyb.com/"
+        "company": {
+          "logo": "https://picsum.photos/150/150.jpg?random=5",
+          "name": "会社B",
+          "link": "http://www.companyb.com/"
         },
-        "ThirdParty": {
-          "Name": "GitHub",
-          "Link": "https://github.com/willpelicari/JsonBasedPortfolio",
-          "RibbonBgColor": "bg-green-400",
-          "RibbonFontColor": "text-black",
-          "RibbonDescription": "available on "
+        "thirdParty": {
+          "name": "GitHub",
+          "link": "https://github.com/willpelicari/JsonBasedPortfolio",
+          "ribbonBgColor": "bg-green-400",
+          "ribbonFontColor": "text-black",
+          "ribbonDescription": "available on "
         },
-        "Job": {
-          "Title": "フロントエンド開発者",
-          "Duration": "2021年3月から2021年12月まで",
-          "TechStack": [
+        "job": {
+          "title": "フロントエンド開発者",
+          "duration": "2021年3月から2021年12月まで",
+          "techStack": [
             {
-              "Category": "テクノロジー",
-              "Stack": ["HTML5", "CSS3", "JavaScript"]
+              "category": "テクノロジー",
+              "stack": ["HTML5", "CSS3", "JavaScript"]
             },
             {
-              "Category": "フレームワークとライブラリ",
-              "Stack": ["Vue.js", "SASS", "jQuery"]
+              "category": "フレームワークとライブラリ",
+              "stack": ["Vue.js", "SASS", "jQuery"]
             },
             {
-              "Category": "メソドロジー",
-              "Stack": ["スクラム"]
+              "category": "メソドロジー",
+              "stack": ["スクラム"]
             },
             {
-              "Category": "ツール",
-              "Stack": ["Git", "Bitbucket", "Gulp"]
+              "category": "ツール",
+              "stack": ["Git", "Bitbucket", "Gulp"]
             }
           ],
-          "Description": "私はウェブアプリケーションのためのレスポンシブなフロントエンドデザインを作成および維持しました。デザインチームと協力して視覚的に魅力的なユーザーインターフェースを実装しました。"
+          "description": "私はウェブアプリケーションのためのレスポンシブなフロントエンドデザインを作成および維持しました。デザインチームと協力して視覚的に魅力的なユーザーインターフェースを実装しました。"
         }
       }
     ]
   },
-  "Footer": {
-    "Message": "プロジェクトはウィルトン・ペリカリによって開発されました",
-    "Link": "#",
-    "SocialMedia": [
+  "footer": {
+    "message": "プロジェクトはウィルトン・ペリカリによって開発されました",
+    "link": "#",
+    "socialMedia": [
       {
-        "Icon": "./icons/linkedin.svg",
-        "Link": "https://www.linkedin.com/in/wiltonpelicari/"
+        "icon": "./icons/linkedin.svg",
+        "link": "https://www.linkedin.com/in/wiltonpelicari/"
       },
       {
-        "Icon": "./icons/github-mark.svg",
-        "Link": "https://github.com/willpelicari"
+        "icon": "./icons/github-mark.svg",
+        "link": "https://github.com/willpelicari"
       }
     ]
   }

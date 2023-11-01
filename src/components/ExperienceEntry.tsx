@@ -13,9 +13,9 @@ export default function ExperienceEntry({
   ...props
 }: ExperienceEntryProps) {
   const consultingText =
-    entry?.ThirdParty?.RibbonDescription ?? 'consulting for '
-  const bgColor = entry?.ThirdParty?.RibbonBgColor ?? 'bg-green-400'
-  const fontColor = entry?.ThirdParty?.RibbonFontColor ?? 'text-black'
+    entry?.thirdParty?.ribbonDescription ?? 'consulting for '
+  const bgColor = entry?.thirdParty?.ribbonBgColor ?? 'bg-green-400'
+  const fontColor = entry?.thirdParty?.ribbonFontColor ?? 'text-black'
 
   const [showExperience, setShowExperience] = useState(true)
   const filterContext = useContext(FilterContext)
@@ -25,12 +25,13 @@ export default function ExperienceEntry({
       setShowExperience(true)
     } else {
       setShowExperience(
-        entry.Job.TechStack.map((x) => x.Stack)
+        entry.job.techStack
+          .map((x) => x.stack)
           .flat()
           .some((tech) => filterContext.filteredTags.includes(tech))
       )
     }
-  }, [entry.Job.TechStack, filterContext.filteredTags])
+  }, [entry.job.techStack, filterContext.filteredTags])
 
   return (
     entry && (
@@ -41,36 +42,36 @@ export default function ExperienceEntry({
       >
         <div key={props.key} className="text-center w-fit mx-auto">
           <a
-            href={entry.Company.Link}
+            href={entry.company.link}
             target="_blank"
-            aria-label={entry.Company.Name}
+            aria-label={entry.company.name}
             rel="noreferrer"
           >
             {
               <img
-                src={entry.Company.Logo}
+                src={entry.company.logo}
                 style={{
                   width: 150,
                   maxWidth: 150,
                   minHeight: 150,
                   marginRight: 5
                 }}
-                alt={entry.Company.Name}
+                alt={entry.company.name}
               />
             }
           </a>
-          {entry.ThirdParty && (
+          {entry.thirdParty && (
             <div
               className={`px-1 text-xs block font-semibold ${fontColor} ${bgColor}`}
             >
               {consultingText + ' '}
-              {entry.ThirdParty.Name && (
+              {entry.thirdParty.name && (
                 <a
-                  href={entry.ThirdParty.Link}
+                  href={entry.thirdParty.link}
                   target="_blank"
                   rel="noreferrer"
                 >
-                  {entry.ThirdParty.Name}
+                  {entry.thirdParty.name}
                 </a>
               )}
             </div>
@@ -79,14 +80,15 @@ export default function ExperienceEntry({
         <div className="space-y-2">
           <div className="flex-col md:flex-row mb-5 flex items-center justify-between space-x-4 mr-4 text-center">
             <h4 className="text-xl md:text-2xl font-semibold">
-              {entry.Job.Title}
+              {entry.job.title}
             </h4>
             <span className="text-md md:text-lg whitespace-nowrap">
-              {entry.Job.Duration}
+              {entry.job.duration}
             </span>
           </div>
           <div className="mb-5">
-            {entry.Job.TechStack.map((x) => x.Stack)
+            {entry.job.techStack
+              .map((x) => x.stack)
               .flat()
               .map((element, key) => (
                 <Tag key={key} value={element} />
@@ -94,7 +96,7 @@ export default function ExperienceEntry({
           </div>
           <div>
             <p className="whitespace-pre-line align-bottom">
-              {entry.Job.Description}
+              {entry.job.description}
             </p>
           </div>
         </div>

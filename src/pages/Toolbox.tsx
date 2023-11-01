@@ -9,7 +9,7 @@ interface ToolboxProps {
 }
 
 export function Toolbox({ title, description, experiences }: ToolboxProps) {
-  const categories = BuildCategories(experiences.Entries)
+  const categories = BuildCategories(experiences.entries)
 
   return (
     <Section id="toolbox" title={title} description={description}>
@@ -33,15 +33,15 @@ function BuildCategories(entries: Entry[]) {
   const dict: any = {}
 
   entries
-    .filter((entry) => entry.Job && entry.Job.TechStack)
+    .filter((entry) => entry.job && entry.job.techStack)
     .forEach((entry) => {
-      entry.Job.TechStack.forEach((stack) => {
-        if (!dict[stack.Category]) {
-          dict[stack.Category] = [...stack.Stack]
+      entry.job.techStack.forEach((stack) => {
+        if (!dict[stack.category]) {
+          dict[stack.category] = [...stack.stack]
         } else {
-          stack.Stack.forEach((tech) => {
-            if (dict[stack.Category].indexOf(tech) === -1) {
-              dict[stack.Category].push(tech)
+          stack.stack.forEach((tech) => {
+            if (dict[stack.category].indexOf(tech) === -1) {
+              dict[stack.category].push(tech)
             }
           })
         }

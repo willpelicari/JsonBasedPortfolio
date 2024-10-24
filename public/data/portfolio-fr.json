@@ -66,29 +66,31 @@
           "name": "Entreprise A",
           "link": "http://www.entreprisea.com/"
         },
-        "job": {
-          "title": "Développeur Web",
-          "duration": "Depuis janvier 2022",
-          "techStack": [
-            {
-              "category": "Technologies",
-              "stack": ["HTML5", "CSS3", "JavaScript"]
-            },
-            {
-              "category": "Cadres et Bibliothèques",
-              "stack": ["React", "Node.js", "jQuery"]
-            },
-            {
-              "category": "Méthodologies",
-              "stack": ["Agile", "Scrum"]
-            },
-            {
-              "category": "Outils",
-              "stack": ["Git", "JIRA", "Webpack"]
-            }
-          ],
-          "description": "J'ai contribué au développement d'applications web, en veillant à la qualité du code et à la réactivité. J'ai collaboré avec des équipes pluridisciplinaires pour atteindre les objectifs du projet."
-        }
+        "jobs": [
+          {
+            "title": "Développeur Web",
+            "duration": "Depuis janvier 2022",
+            "techStack": [
+              {
+                "category": "Technologies",
+                "stack": ["HTML5", "CSS3", "JavaScript"]
+              },
+              {
+                "category": "Cadres et Bibliothèques",
+                "stack": ["React", "Node.js", "jQuery"]
+              },
+              {
+                "category": "Méthodologies",
+                "stack": ["Agile", "Scrum"]
+              },
+              {
+                "category": "Outils",
+                "stack": ["Git", "JIRA", "Webpack"]
+              }
+            ],
+            "description": "J'ai contribué au développement d'applications web, en veillant à la qualité du code et à la réactivité. J'ai collaboré avec des équipes pluridisciplinaires pour atteindre les objectifs du projet."
+          }
+        ]
       },
       {
         "company": {
@@ -103,29 +105,31 @@
           "ribbonFontColor": "text-black",
           "ribbonDescription": "available on "
         },
-        "job": {
-          "title": "Développeur Front-end",
-          "duration": "De mars 2021 à décembre 2021",
-          "techStack": [
-            {
-              "category": "Technologies",
-              "stack": ["HTML5", "CSS3", "JavaScript"]
-            },
-            {
-              "category": "Cadres et Bibliothèques",
-              "stack": ["Vue.js", "SASS", "jQuery"]
-            },
-            {
-              "category": "Méthodologies",
-              "stack": ["Scrum"]
-            },
-            {
-              "category": "Outils",
-              "stack": ["Git", "Bitbucket", "Gulp"]
-            }
-          ],
-          "description": "J'ai créé et entretenu des conceptions front-end réactives pour des applications web. J'ai collaboré avec l'équipe de conception pour mettre en œuvre des interfaces utilisateur visuellement attrayantes."
-        }
+        "jobs": [
+          {
+            "title": "Développeur Front-end",
+            "duration": "De mars 2021 à décembre 2021",
+            "techStack": [
+              {
+                "category": "Technologies",
+                "stack": ["HTML5", "CSS3", "JavaScript"]
+              },
+              {
+                "category": "Cadres et Bibliothèques",
+                "stack": ["Vue.js", "SASS", "jQuery"]
+              },
+              {
+                "category": "Méthodologies",
+                "stack": ["Scrum"]
+              },
+              {
+                "category": "Outils",
+                "stack": ["Git", "Bitbucket", "Gulp"]
+              }
+            ],
+            "description": "J'ai créé et entretenu des conceptions front-end réactives pour des applications web. J'ai collaboré avec l'équipe de conception pour mettre en œuvre des interfaces utilisateur visuellement attrayantes."
+          }
+        ]
       }
     ]
   },

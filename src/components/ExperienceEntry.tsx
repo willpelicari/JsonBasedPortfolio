@@ -25,20 +25,22 @@ export default function ExperienceEntry({
       setShowExperience(true)
     } else {
       setShowExperience(
-        entry.job.techStack
+        entry.jobs
+          .map((x) => x.techStack)
+          .flat()
           .map((x) => x.stack)
           .flat()
           .some((tech) => filterContext.filteredTags.includes(tech))
       )
     }
-  }, [entry.job.techStack, filterContext.filteredTags])
+  }, [entry.jobs, filterContext.filteredTags])
 
   return (
     entry && (
       <li
         className={`${
           !showExperience ? 'hidden' : 'block md:flex'
-        } items-center space-x-3 mb-10 bg-slate-200 dark:bg-slate-800 text-black dark:text-white shadow-sm px-4 py-8 rounded`}
+        } items-start space-x-3 mb-10 bg-slate-200 dark:bg-slate-800 text-black dark:text-white shadow-sm px-4 py-8 rounded`}
       >
         <div key={props.key} className="text-center w-fit mx-auto">
           <a
@@ -77,28 +79,32 @@ export default function ExperienceEntry({
             </div>
           )}
         </div>
-        <div className="space-y-2">
-          <div className="flex-col md:flex-row mb-5 flex items-center justify-between space-x-4 mr-4 text-center">
-            <h4 className="text-xl md:text-2xl font-semibold">
-              {entry.job.title}
-            </h4>
-            <span className="text-md md:text-lg whitespace-nowrap">
-              {entry.job.duration}
-            </span>
-          </div>
-          <div className="mb-5">
-            {entry.job.techStack
-              .map((x) => x.stack)
-              .flat()
-              .map((element, key) => (
-                <Tag key={key} value={element} />
-              ))}
-          </div>
-          <div>
-            <p className="whitespace-pre-line align-bottom">
-              {entry.job.description}
-            </p>
-          </div>
+        <div className="grid gap-10">
+          {entry.jobs.map((job, key) => (
+            <div key={`${props.key}-${key}`} className="space-y-2">
+              <div className="flex-col md:flex-row mb-5 flex items-center justify-between space-x-4 mr-4 text-center">
+                <h4 className="text-xl md:text-2xl font-semibold">
+                  {job.title}
+                </h4>
+                <span className="text-md md:text-lg whitespace-nowrap">
+                  {job.duration}
+                </span>
+              </div>
+              <div className="mb-5">
+                {job.techStack
+                  .map((x) => x.stack)
+                  .flat()
+                  .map((element, key) => (
+                    <Tag key={key} value={element} />
+                  ))}
+              </div>
+              <div>
+                <p className="whitespace-pre-line align-bottom">
+                  {job.description}
+                </p>
+              </div>
+            </div>
+          ))}
         </div>
       </li>
     )

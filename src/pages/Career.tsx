@@ -27,10 +27,9 @@ export function Career({ experiences }: CareerProps) {
           {/* <p>Showing {} out of {experiences.Entries.length}</p> */}
         </div>
         <ul className="space-y-12">
-          {experiences.entries &&
-            experiences.entries.map((entry, key) => (
-              <ExperienceEntry key={key} entry={entry} />
-            ))}
+          {experiences.entries?.map((entry, key) => (
+            <ExperienceEntry key={key} entry={entry} />
+          ))}
         </ul>
       </div>
     </Section>

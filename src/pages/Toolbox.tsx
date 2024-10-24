@@ -33,19 +33,22 @@ function BuildCategories(entries: Entry[]) {
   const dict: any = {}
 
   entries
-    .filter((entry) => entry.job && entry.job.techStack)
+    .filter((entry) => entry.jobs?.map((x) => x.techStack).flat())
     .forEach((entry) => {
-      entry.job.techStack.forEach((stack) => {
-        if (!dict[stack.category]) {
-          dict[stack.category] = [...stack.stack]
-        } else {
-          stack.stack.forEach((tech) => {
-            if (dict[stack.category].indexOf(tech) === -1) {
-              dict[stack.category].push(tech)
-            }
-          })
-        }
-      })
+      entry.jobs
+        .map((x) => x.techStack)
+        .flat()
+        .forEach((stack) => {
+          if (!dict[stack.category]) {
+            dict[stack.category] = [...stack.stack]
+          } else {
+            stack.stack.forEach((tech) => {
+              if (dict[stack.category].indexOf(tech) === -1) {
+                dict[stack.category].push(tech)
+              }
+            })
+          }
+        })
     })
 
   return dict

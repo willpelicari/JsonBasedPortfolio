@@ -66,29 +66,31 @@
           "name": "Company A",
           "link": "http://www.companya.com/"
         },
-        "job": {
-          "title": "Web Developer",
-          "duration": "Since January 2022",
-          "techStack": [
-            {
-              "category": "Technologies",
-              "stack": ["HTML5", "CSS3", "JavaScript"]
-            },
-            {
-              "category": "Framework & Libraries",
-              "stack": ["React", "Node.js", "jQuery"]
-            },
-            {
-              "category": "Methodologies",
-              "stack": ["Agile", "Scrum"]
-            },
-            {
-              "category": "Tools",
-              "stack": ["Git", "JIRA", "Webpack"]
-            }
-          ],
-          "description": "I contributed to the development of web applications, ensuring high-quality code and responsiveness. Collaborated with cross-functional teams to meet project goals."
-        }
+        "jobs": [
+          {
+            "title": "Web Developer",
+            "duration": "Since January 2022",
+            "techStack": [
+              {
+                "category": "Technologies",
+                "stack": ["HTML5", "CSS3", "JavaScript"]
+              },
+              {
+                "category": "Framework & Libraries",
+                "stack": ["React", "Node.js", "jQuery"]
+              },
+              {
+                "category": "Methodologies",
+                "stack": ["Agile", "Scrum"]
+              },
+              {
+                "category": "Tools",
+                "stack": ["Git", "JIRA", "Webpack"]
+              }
+            ],
+            "description": "I contributed to the development of web applications, ensuring high-quality code and responsiveness. Collaborated with cross-functional teams to meet project goals."
+          }
+        ]
       },
       {
         "company": {
@@ -103,29 +105,31 @@
           "ribbonFontColor": "text-black",
           "ribbonDescription": "available on "
         },
-        "job": {
-          "title": "Front-end Developer",
-          "duration": "March 2021 to December 2021",
-          "techStack": [
-            {
-              "category": "Technologies",
-              "stack": ["HTML5", "CSS3", "JavaScript"]
-            },
-            {
-              "category": "Framework & Libraries",
-              "stack": ["Vue.js", "SASS", "jQuery"]
-            },
-            {
-              "category": "Methodologies",
-              "stack": ["Scrum"]
-            },
-            {
-              "category": "Tools",
-              "stack": ["Git", "Bitbucket", "Gulp"]
-            }
-          ],
-          "description": "I created and maintained responsive front-end designs for web applications. Collaborated with the design team to implement visually appealing user interfaces."
-        }
+        "jobs": [
+          {
+            "title": "Front-end Developer",
+            "duration": "March 2021 to December 2021",
+            "techStack": [
+              {
+                "category": "Technologies",
+                "stack": ["HTML5", "CSS3", "JavaScript"]
+              },
+              {
+                "category": "Framework & Libraries",
+                "stack": ["Vue.js", "SASS", "jQuery"]
+              },
+              {
+                "category": "Methodologies",
+                "stack": ["Scrum"]
+              },
+              {
+                "category": "Tools",
+                "stack": ["Git", "Bitbucket", "Gulp"]
+              }
+            ],
+            "description": "I created and maintained responsive front-end designs for web applications. Collaborated with the design team to implement visually appealing user interfaces."
+          }
+        ]
       }
     ]
   },

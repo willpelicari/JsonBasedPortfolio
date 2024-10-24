@@ -66,29 +66,31 @@
           "name": "会社A",
           "link": "http://www.companya.com/"
         },
-        "job": {
-          "title": "Web開発者",
-          "duration": "2022年1月から",
-          "techStack": [
-            {
-              "category": "テクノロジー",
-              "stack": ["HTML5", "CSS3", "JavaScript"]
-            },
-            {
-              "category": "フレームワークとライブラリ",
-              "stack": ["React", "Node.js", "jQuery"]
-            },
-            {
-              "category": "メソドロジー",
-              "stack": ["アジャイル", "スクラム"]
-            },
-            {
-              "category": "ツール",
-              "stack": ["Git", "JIRA", "Webpack"]
-            }
-          ],
-          "description": "私はウェブアプリケーションの開発に貢献し、高品質なコードとレスポンシブ対応を確保しました。プロジェクト目標を達成するためにクロスファンクショナルチームと協力しました。"
-        }
+        "jobs": [
+          {
+            "title": "Web開発者",
+            "duration": "2022年1月から",
+            "techStack": [
+              {
+                "category": "テクノロジー",
+                "stack": ["HTML5", "CSS3", "JavaScript"]
+              },
+              {
+                "category": "フレームワークとライブラリ",
+                "stack": ["React", "Node.js", "jQuery"]
+              },
+              {
+                "category": "メソドロジー",
+                "stack": ["アジャイル", "スクラム"]
+              },
+              {
+                "category": "ツール",
+                "stack": ["Git", "JIRA", "Webpack"]
+              }
+            ],
+            "description": "私はウェブアプリケーションの開発に貢献し、高品質なコードとレスポンシブ対応を確保しました。プロジェクト目標を達成するためにクロスファンクショナルチームと協力しました。"
+          }
+        ]
       },
       {
         "company": {
@@ -103,29 +105,31 @@
           "ribbonFontColor": "text-black",
           "ribbonDescription": "available on "
         },
-        "job": {
-          "title": "フロントエンド開発者",
-          "duration": "2021年3月から2021年12月まで",
-          "techStack": [
-            {
-              "category": "テクノロジー",
-              "stack": ["HTML5", "CSS3", "JavaScript"]
-            },
-            {
-              "category": "フレームワークとライブラリ",
-              "stack": ["Vue.js", "SASS", "jQuery"]
-            },
-            {
-              "category": "メソドロジー",
-              "stack": ["スクラム"]
-            },
-            {
-              "category": "ツール",
-              "stack": ["Git", "Bitbucket", "Gulp"]
-            }
-          ],
-          "description": "私はウェブアプリケーションのためのレスポンシブなフロントエンドデザインを作成および維持しました。デザインチームと協力して視覚的に魅力的なユーザーインターフェースを実装しました。"
-        }
+        "jobs": [
+          {
+            "title": "フロントエンド開発者",
+            "duration": "2021年3月から2021年12月まで",
+            "techStack": [
+              {
+                "category": "テクノロジー",
+                "stack": ["HTML5", "CSS3", "JavaScript"]
+              },
+              {
+                "category": "フレームワークとライブラリ",
+                "stack": ["Vue.js", "SASS", "jQuery"]
+              },
+              {
+                "category": "メソドロジー",
+                "stack": ["スクラム"]
+              },
+              {
+                "category": "ツール",
+                "stack": ["Git", "Bitbucket", "Gulp"]
+              }
+            ],
+            "description": "私はウェブアプリケーションのためのレスポンシブなフロントエンドデザインを作成および維持しました。デザインチームと協力して視覚的に魅力的なユーザーインターフェースを実装しました。"
+          }
+        ]
       }
     ]
   },

@@ -81,7 +81,7 @@ Here's a summary of how each field in JSON file affects your portfolio:
 - Values:
   - Cards shown right after About section. Developed thinking on what distinguish you from the others so you can add an icon (`values.cards.icon`), Title (`values.cards.title`) and Description (`values.cards.description`);
 - Toolbox:
-  - This section is a bit special since it lists every stack you've added on each job entry, **this is case-sensitive so be sure you're writing the exact same word when it's intended**. In order to populate it with categories and tags you have to add a new item in `experiences.entries.job.techStack`. Every different category and stack value is added here so it can filter your experience when such tag is clicked;
+  - This section is a bit special since it lists every stack you've added on each job entry, **this is case-sensitive so be sure you're writing the exact same word when it's intended**. In order to populate it with categories and tags you have to add a new item in `experiences.entries.jobs.job.techStack`. Every different category and stack value is added here so it can filter your experience when such tag is clicked;
 - Experiences:
   - Company:
     - You can add information regarding the company such as Logo, name (used for acessibility) then link;

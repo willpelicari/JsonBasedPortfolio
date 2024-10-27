@@ -4,7 +4,7 @@
   "editor.detectIndentation": false,
   "editor.formatOnSave": true,
   "editor.codeActionsOnSave": {
-    "source.organizeImports": true
+    "source.organizeImports": "explicit"
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.bracketPairColorization.enabled": true,

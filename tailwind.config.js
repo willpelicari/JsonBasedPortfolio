@@ -2,6 +2,6 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {},
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
   darkMode: 'class'
 }

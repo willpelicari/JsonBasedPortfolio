@@ -1,9 +1,9 @@
+import { Themes } from '@types/CustomTypes'
+import { PortfolioContext } from 'contexts/PortfolioContext'
+import { ThemeContext } from 'contexts/ThemeContext'
 import { useContext, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { BsFillSunFill, BsMoonStarsFill } from 'react-icons/bs'
-import { Themes } from '../@types/CustomTypes'
-import { PortfolioContext } from '../contexts/PortfolioContext'
-import { ThemeContext } from '../contexts/ThemeContext'
 
 export default function Header() {
   const i18n = useTranslation()[1]

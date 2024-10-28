@@ -1,5 +1,5 @@
+import { PortfolioContext } from 'contexts/PortfolioContext'
 import { useContext } from 'react'
-import { PortfolioContext } from '../contexts/PortfolioContext'
 
 export default function Footer() {
   const content = useContext(PortfolioContext)
